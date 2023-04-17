@@ -1,0 +1,246 @@
+body {
+    background-color: #e4e4e4;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+/*Меню сайта*/
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 1180px; /* встановлюємо ширину */
+    margin: 0 auto; /* центруємо горизонтально */
+  }
+    .menu {
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%; /* займає всю ширину батьківського елемента */
+  }
+  .menu_list {
+    margin: 0 10px;
+    width: calc((100% - 40px) / 4); /* розраховуємо ширину пункта меню (4 пункти) */
+  }
+  .menu_text {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    margin: 0 10px;
+  }
+  .menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  .menu_text:hover {
+    background-color: #4b54ff;
+    color: #fff;
+  }
+  .menu a.active {
+    background-color: #7077ff;
+    color: #fff;
+  }
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 30px;
+}
+/*Основна інформація*/
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main_content {
+    padding: 0 50px 50px 50px;
+}
+.left-section {
+	width: 300px;
+	margin-right: 80px;
+	flex-shrink: 0;
+}
+
+.right-section {
+	flex-grow: 1;
+	min-width: 300px;
+}
+
+.profile-image {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.user-info {
+    margin-top: 20px;
+    text-align: center;
+    }
+    .user-info h2 {
+        margin-top: 0;
+        font-size: 1.5em;
+      }
+      
+      .user-info p {
+        margin: 5px 0;
+      }
+      
+      .user-info {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+      }
+    .post {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .post h3 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+    }
+    .post p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: 1.2rem;
+      }
+    .comment-form input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+    
+    .comment-form label {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    }
+    
+    .comment-form input[type="text"]:focus {
+        outline: none;
+        border-color: #66afe9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(102, 175, 233, 0.5);
+      }
+
+    .comment-list {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style: none;
+    }
+    
+    .comment {
+    margin-bottom: 5px;
+    }
+    
+    .comment-info {
+    font-weight: bold;
+    font-size: 12px;
+    }
+    
+    .comment-text {
+    margin-left: 20px;
+    font-size: 14px;
+    }
+    
+    .comment-date {
+    font-size: 12px;
+    color: gray;
+    margin-left: 20px;
+    }
+    
+    .comment-form-error {
+    color: red;
+    margin-top: 5px;
+    flex-basis: 100%;
+    }
+    @media (max-width: 600px) {
+        .left-section {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .right-section {
+            min-width: auto;
+            margin-left: 100px;
+        }
+    }
+    
+    @media (max-width: 400px) {
+    .comment-form input[type="text"] {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+    }
+    }
+.comment-form button[type="submit"] {
+  background-color: #8a67ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.comment-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+/* Стилі для кнопки "лайк" */
+.like-button {
+    display: inline-block;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #8a67ff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.like-button.liked {
+    background-color: #eee;
+}
+.like-button .icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+/* Стилі для публікацій, які сподобалися користувачеві */
+.post.liked {
+	background-color: #00bbff;
+}
+.like-button:hover {
+    background-color: #d12222;
+}
