@@ -1,0 +1,250 @@
+body {
+    background-color: #e4e4e4;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+/*Меню сайта*/
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 1180px; /* встановлюємо ширину */
+    margin: 0 auto; /* центруємо горизонтально */
+  }
+    .menu {
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%; /* займає всю ширину батьківського елемента */
+  }
+  .menu_list {
+    margin: 0 10px;
+    width: calc((100% - 40px) / 4); /* розраховуємо ширину пункта меню (4 пункти) */
+  }
+  .menu_text {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    margin: 0 10px;
+  }
+  .menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  .menu_text:hover {
+    background-color: #4b54ff;
+    color: #fff;
+  }
+  .menu a.active {
+    background-color: #7077ff;
+    color: #fff;
+  }
+/*Основна інформація*/
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #FFF;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main_content {
+    padding: 0 50px 50px 50px;
+}
+/*About me*/
+.my_profession {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}
+.about_me_container {
+    width: 100%; /* задаємо ширину блоку */
+    margin: 0 auto; /* позиціонуємо блок в центрі по горизонталі */
+}
+.contacts_type {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    margin-right: 8px;
+}
+.my_name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: black; 
+}
+.my_description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}
+.main_content_title2 {
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color: black;
+    margin: auto;
+}
+.project_item {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: black;
+}
+.project_list {
+    padding: 0 0 0 16px;
+    margin: 0;
+}
+.container_projects {
+    margin-bottom: 48px;
+    width: 600px;
+}
+.project_item_description {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+}
+.project_item_link {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: blue;
+    text-decoration-line: underline; 
+}
+.work_experience_container {
+    margin: 0 0 0 0;
+}
+.work_experience_positions1 {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;  
+    color: black;
+    margin: 0 0 0 0;
+}
+.work_experience_positions2 {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;  
+    color: black;
+    margin: 0 0 0 300px;
+}
+.work_experience_positions3 {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;  
+    color: black;
+    margin: 0 0 0 600px;
+}
+.work_experience_place {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #b7b7b7;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.work_experience_name {
+    color: rgb(82, 200, 255);
+}
+.work_period2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:rgb(0, 0, 0);
+    margin: 0 0 0 300px;
+}
+.work_period3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:rgb(0, 0, 0);
+    margin: 0 0 0 600px;
+}
+.work_description1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:rgb(0, 0, 0);
+    margin: 0 0 0 0;
+}
+.work_description2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:rgb(0, 0, 0);
+    margin: 0 0 0 300px;
+}
+.work_description3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:rgb(0, 0, 0);
+    margin: 0 0 0 600px;
+}
+.work_description_list {
+    padding: 16px;
+    margin: 0;
+}
+.education_container {
+    margin: 0 0 0 0;
+
+}
+.education {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 17px;
+    color: black;
+    
+}
+.education_name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    color: rgb(82, 200, 255);  
+}
+.education_info {
+    border-bottom: 1px solid #b7b7b7;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.education_period {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:black;
+width: 64%;
+}
